@@ -1,0 +1,113 @@
+// static
+Partner {
+    name: String
+    text: String
+    ling: Int
+    type: Int
+    skill: Set<Skill>
+    aptitude: Int
+    attr: Attr
+    magic: Item
+    karma: List<Karma>
+
+}
+Skill {
+    name: String
+    text: String
+    effect: Effect
+}
+Item {
+    name: String
+    text: String
+    maxCount: Int
+    usable: Boolean
+    type: Int
+    inBag: Boolean
+}
+Map {
+
+}
+Place {
+
+}
+Stage {
+    name: String
+    text: String
+    number: Int
+    place: Place
+    enemyArray: BattleArray
+    award: List<Item>
+    power: Int
+    condition: Set<Condition>
+}
+BattleArray {
+    type: Int
+    array: Map<Int, Character>
+}
+Character {
+    name: String
+    text: String
+    ling: Int
+    skill: Set<Skill>
+    attr: Attr
+}
+Enemy: Character {
+    name: String
+    text: String
+    ling: Int
+    skill: Set<Skill>
+    attr: Attr
+}
+Attr {
+    hp: Int
+    atk: Int
+    def: Int
+    crt: Int
+    hit: Int
+    dge: Int
+    tna: Int
+    blk: Int
+}
+LifeAttr {
+    wlh:
+    itg:
+    pec:
+    glm:
+    cug:
+    lck:
+}
+Karma {
+    name: String
+    member: List<Partner>
+    effect: Effect
+}
+Quality {
+    name: String
+    color: Int
+}
+Stone {
+    name: String
+    quality: Quality
+    effect: Effect
+}
+TalentRequire {
+    type: Int
+    step: Int
+    level: Int
+    item: Map<Item, Int>
+}
+State {
+
+}
+
+// dynamic
+Player
+PlayerPartner {
+    partner: Partner
+    level: Int
+    talent: Talent
+    state:
+
+}
+Team
+

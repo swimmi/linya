@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="linya" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="net.swimmi.linya.model.Item" />
+        <mapping class="net.swimmi.linya.model.Partner" />
+        <mapping class="net.swimmi.linya.model.Karma" />
+        <mapping class="net.swimmi.linya.model.MyPartner" />
+        <mapping class="net.swimmi.linya.model.MyItem" />
+    </list>
+</litepal>

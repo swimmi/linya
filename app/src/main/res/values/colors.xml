@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43b7ff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fae291</color>
+    <color name="colorVice">#3ABF74</color>
+
+    <color name="colorScene">#556489</color>
+    <color name="colorCircle">#425466</color>
+    <color name="colorCircleBorder">#90a3b4</color>
+    <color name="colorBackground">#88566d81</color>
+    <color name="colorBackgroundBorder">#a5c4df</color>
+    <color name="colorBackgroundPressed">#364a5c</color>
+    <color name="colorButton">#e9ffde</color>
+    <color name="colorText">#333333</color>
+    <color name="colorTextVice">#5B5652</color>
+    <color name="colorTextLight">#cac1c1</color>
+    <color name="colorTextGrey">#9b9b9b</color>
+    <color name="colorTitleHolder">#55425466</color>
+    <color name="colorPanel">#212e4d</color>
+    <color name="colorPanelLight">#b9dcff</color>
+    <color name="colorPanelBorder">#88373657</color>
+    <color name="colorPanelBorderLight">#6f879c</color>
+    <color name="colorPanelBackground">#7b90d4</color>
+    <color name="colorCatalog">#90a3b4</color>
+    <color name="colorPartnerLack">#b9bec4</color>
+    <color name="colorPopupBackground">#354261</color>
+    <color name="colorPopupBorder">#7190b7</color>
+    <color name="colorExpBar">#70e8ff</color>>
+    <color name="colorExpBarLight">#8cedff</color>
+    <color name="colorExpBarBackground">#1f1e34</color>
+    <color name="colorAdvBlock">#735646</color>
+    <color name="colorRipple">#a5b3fb</color>
+
+    <color name="colorLabel">#a5b3fb</color>
+    <color name="colorLabelText">#e0e0e0</color>
+    <color name="colorLabelBackground">#556489</color>
+    <color name="colorAttr">#ecb966</color>
+    <color name="colorAppendText">#77de68</color>
+
+    <color name="colorButtonText">#814a0e</color>
+    <color name="colorPrimaryButton">#ed9c17</color>
+    <color name="colorPrimaryButtonLight">#d1a661</color>
+    <color name="colorPrimaryButtonBorder">#efd1a1</color>
+    <color name="colorViceButton">#428ed2</color>
+    <color name="colorViceButtonLight">#5cd6ff</color>
+    <color name="colorViceButtonBorder">#ade3f5</color>
+
+    <color name="colorSelected">#ffbc35</color>
+    <color name="colorDisabled">#c7c7c7</color>
+
+    <color name="colorNull">#d2ccc3</color>
+    <color name="colorFire">#e25b5a</color>
+    <color name="colorWood">#50c63e</color>
+    <color name="colorWater">#1da5ff</color>
+    <color name="colorLight">#ffd167</color>
+    <color name="colorDark">#DC5BB0</color>
+
+    <color name="colorItemResource">#022249</color>
+
+    <color name="colorOrange">#ef952e</color>
+    <color name="colorPurple">#e75af6</color>
+    <color name="colorBlue">#319aff</color>
+    <color name="colorGreen">#63ac3b</color>
+    <color name="colorGrey">#978a8a</color>
+    <color name="colorRed">#e44d4d</color>
+    <color name="colorWhite">#f5f5f5</color>
+    <color name="colorTransparent">#00ffffff</color>
+</resources>

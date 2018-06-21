@@ -1,0 +1,2 @@
+/home/swimmi/Workspace/Linya/app/src/main/java/net/swimmi/linya/ui/activity/ActBattle.kt
+/home/swimmi/Workspace/Linya/app/src/main/java/net/swimmi/linya/ui/view/custom/SatelliteView.kt

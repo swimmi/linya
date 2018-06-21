@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">林雅</string>
+
+    <!-- 功能菜单 -->
+    <string name="home">家园</string>
+    <string name="challenge">挑战</string>
+    <string name="explore">探索</string>
+    <string name="partner">伙伴</string>
+    <string name="backpack">背包</string>
+
+    <!-- 培养系列 -->
+    <string name="random">炼纹</string>
+    <string name="magic">法宝</string>
+    <string name="summon">召魂</string>
+    <string name="dice">吉星</string>
+    <string name="equip">神装</string>
+
+    <!-- 挑战系列 -->
+    <string name="battle">对决</string>
+    <string name="exercise">试炼</string>
+    <string name="adventure">奇遇</string>
+    <string name="gateway">造化</string>
+    <string name="invade">驱魔</string>
+
+    <!-- 探索系列 -->
+
+    <string name="world">世界</string>
+    <string name="foster">培养</string>
+    <string name="player">玩家</string>
+    <string name="team">队伍</string>
+    <string name="mission">任务</string>
+    <string name="catalog">目录</string>
+
+    <string name="partner_catalog">伙伴目录</string>
+    <string name="partner_detail">伙伴详情</string>
+
+    <string name="basic_skill">普攻</string>
+    <string name="power_skill">绝技</string>
+    <string name="wonder_skill">神通</string>
+
+    <string name="partner_role">角色</string>
+    <string name="partner_attr">属性</string>
+    <string name="partner_skill">技能</string>
+    <string name="partner_talent">天赋</string>
+    <string name="partner_soul">元灵</string>
+    <string name="partner_stone">纹石</string>
+    <string name="partner_jade">灵玉</string>
+    <string name="partner_aptt">资质</string>
+    <string name="partner_power">战力</string>
+    <string name="partner_speed">先攻</string>
+    <string name="backpack_material">材料</string>
+    <string name="backpack_supply">消耗品</string>
+
+    <string name="partner_attr_hp">生命</string>
+    <string name="partner_attr_mp">灵力</string>
+    <string name="partner_attr_atk">生命</string>
+    <string name="partner_attr_def">防御</string>
+    <string name="partner_attr_crt">暴击</string>
+    <string name="partner_attr_tna">韧性</string>
+    <string name="partner_attr_hit">命中</string>
+    <string name="partner_attr_dge">闪避</string>
+    <string name="partner_attr_blk">格挡</string>
+    <string name="partner_attr_brk">破甲</string>
+
+    <string name="all">全部</string>
+    <string name="set_array">布阵</string>
+    <string name="partner_lack">该伙伴收集中</string>
+    <string name="use">使用</string>
+    <string name="no_item">暂无物品</string>
+    <string name="prepare">备战</string>
+    <string name="random_auto">一键炼纹</string>
+    <string name="random_sell">一键卖出</string>
+    <string name="bad_stone">顽石</string>
+    <string name="random_exchange">碎片兑换</string>
+    <string name="stone_piece">碎片</string>
+
+    <string name="fmt_sell_bad_stones">卖出%1$d颗顽石</string>
+    <string name="fmt_partner_aptt">资质：%1$d</string>
+    <string name="fmt_partner_count">%1$d / %2$d</string>
+</resources>

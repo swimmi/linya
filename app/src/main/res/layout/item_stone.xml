@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="64dp"
+    android:layout_height="64dp">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/bg_green_btn">
+
+    </TextView>
+
+</RelativeLayout>

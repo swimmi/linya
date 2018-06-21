@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/colorScene"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="12dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/bg_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_panel"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <GridView
+                    android:id="@+id/gv_partner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="4dp"
+                    android:verticalSpacing="4dp"
+                    android:scrollbars="none"
+                    android:numColumns="2">
+
+                </GridView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_catalog_tab_ling"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_catalog_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_width"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/ll_panel"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_partner_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:text="123"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/partner_catalog"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/iv_close_catalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

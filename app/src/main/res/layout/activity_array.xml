@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorScene"
+    tools:context=".ui.activity.ActArray">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_partner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/set_array"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PopupCard">
+
+        <include layout="@layout/battle_array" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        style="@style/PopupCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="4dp">
+
+            <GridView
+                android:id="@+id/gv_partner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:numColumns="5"
+                android:stretchMode="columnWidth">
+
+            </GridView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_catalog_tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PopupCard">
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            app:isPrimary="false"
+            app:text="扫荡" />
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            app:isPrimary="true"
+            app:text="挑战" />
+
+    </RelativeLayout>
+
+</LinearLayout>

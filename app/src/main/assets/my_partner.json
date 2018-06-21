@@ -1,0 +1,13 @@
+[
+  {"partner": 1, "level": 72, "exp": 3000, "star": 5},
+  {"partner": 4, "level": 72, "exp": 3000, "star": 5},
+  {"partner": 34, "level": 12, "exp": 3000, "star": 3},
+  {"partner": 53, "level": 1, "exp": 3000, "star": 4},
+  {"partner": 3, "level": 72, "exp": 3000, "star": 4},
+  {"partner": 14, "level": 12, "exp": 3000, "star": 4},
+  {"partner": 5, "level": 72, "exp": 3000, "star": 4},
+  {"partner": 6, "level": 72, "exp": 3000, "star": 4},
+  {"partner": 7, "level": 72, "exp": 3000, "star": 4},
+  {"partner": 9, "level": 72, "exp": 3000, "star": 4},
+  {"partner": 8, "level": 72, "exp": 3000, "star": 5}
+]

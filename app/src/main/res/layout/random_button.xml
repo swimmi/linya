@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_container"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/bg_green_btn" />
+
+    </RelativeLayout>
+
+    <net.swimmi.linya.ui.view.custom.SatelliteView
+        android:id="@+id/sv_selection"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        app:circleWidth="48dp"
+        app:circleColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_accent"
+        android:gravity="center"
+        android:textColor="@color/colorButtonText" />
+
+</RelativeLayout>

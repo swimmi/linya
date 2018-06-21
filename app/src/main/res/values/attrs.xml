@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string|reference" />
+    <attr name="textColor" format="reference" />
+    <attr name="icon" format="reference" />
+    <attr name="name" format="string" />
+    <attr name="hasDot" format="boolean" />
+    <attr name="count" format="integer" />
+    <attr name="ling" format="integer" />
+    <declare-styleable name="MenuButton">
+        <attr name="text" />
+        <attr name="hasDot" />
+    </declare-styleable>
+    <declare-styleable name="NumberTag">
+        <attr name="value" format="integer" />
+        <attr name="icon" />
+    </declare-styleable>
+    <declare-styleable name="TitleBar">
+        <attr name="text" />
+        <attr name="icon" />
+        <attr name="textColor" />
+    </declare-styleable>
+    <declare-styleable name="PartnerView">
+        <attr name="name" />
+        <attr name="level" format="integer" />
+        <attr name="isBoss" format="boolean" />
+        <attr name="ling" />
+        <attr name="hasDot" />
+        <attr name="starCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ItemView">
+        <attr name="name" />
+        <attr name="count" />
+    </declare-styleable>
+    <declare-styleable name="PrimaryButton">
+        <attr name="text" />
+        <attr name="isPrimary" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="BiasTextView">
+        <attr name="degrees" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CatalogTab">
+        <attr name="name" />
+        <attr name="icon" />
+        <attr name="onlyIcon" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="LingTab">
+        <attr name="ling" />
+    </declare-styleable>
+    <declare-styleable name="PanelTab">
+        <attr name="name" />
+    </declare-styleable>
+    <declare-styleable name="LabelText">
+        <attr name="label" format="string" />
+        <attr name="labelColor" format="reference" />
+        <attr name="text" />
+        <attr name="appendText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="RandomButton">
+        <attr name="number" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SatelliteView">
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleColor" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RippleView">
+        <attr name="rippleWidth" format="dimension" />
+        <attr name="rippleColor" format="reference" />
+        <attr name="autoStart" format="boolean" />
+    </declare-styleable>
+</resources>

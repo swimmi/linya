@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="net.swimmi.linya.ui.activity.ActMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/rem" />
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorScene"
+        android:alpha=".8"
+        android:padding="8dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/cl_role"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="32dp"
+                android:paddingStart="36dp"
+                android:paddingLeft="36dp"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                android:background="@drawable/bg_gradient">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp"
+                    android:text="@string/player" />
+                <TextView
+                    android:id="@+id/tv_force"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp"
+                    android:text="22222" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_player"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_circle" >
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/player" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/bg_circle" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    android:text="32" />
+
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/rl_map"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:id="@+id/ll_number"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="32dp"
+                android:paddingEnd="36dp"
+                android:paddingRight="36dp"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_gradient_inverse">
+
+                <net.swimmi.linya.ui.view.combine.NumberTag
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_money"
+                    app:value="4132" />
+
+                <net.swimmi.linya.ui.view.combine.NumberTag
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_power"
+                    app:value="12" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/bg_panel" />
+
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="parent"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_challenge_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_battle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/mb_exercise"
+                    app:text="@string/battle" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_exercise"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_battle"
+                    app:layout_constraintRight_toLeftOf="@id/mb_adventure"
+                    app:text="@string/exercise" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_adventure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_exercise"
+                    app:layout_constraintRight_toLeftOf="@id/mb_gateway"
+                    app:text="@string/adventure" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_gateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_adventure"
+                    app:layout_constraintRight_toLeftOf="@id/mb_invade"
+                    app:text="@string/gateway" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_invade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_gateway"
+                    app:layout_constraintRight_toLeftOf="parent"
+                    app:text="@string/invade" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_foster_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_summon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/mb_random"
+                    app:text="@string/summon" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_summon"
+                    app:layout_constraintRight_toLeftOf="@id/mb_dice"
+                    app:text="@string/random" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_dice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_random"
+                    app:layout_constraintRight_toLeftOf="@id/mb_magic"
+                    app:text="@string/dice" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_magic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_dice"
+                    app:layout_constraintRight_toLeftOf="@id/mb_equip"
+                    app:text="@string/magic" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_equip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_magic"
+                    app:layout_constraintRight_toLeftOf="parent"
+                    app:text="@string/equip" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/mb_challenge"
+                    app:text="@string/home" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_home"
+                    app:layout_constraintRight_toLeftOf="@id/mb_foster"
+                    app:text="@string/challenge" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_foster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_challenge"
+                    app:layout_constraintRight_toLeftOf="@id/mb_partner"
+                    app:hasDot="true"
+                    app:text="@string/foster" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_partner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_foster"
+                    app:layout_constraintRight_toLeftOf="@id/mb_backpack"
+                    app:text="@string/partner" />
+                <net.swimmi.linya.ui.view.combine.MenuButton
+                    android:id="@+id/mb_backpack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toRightOf="@id/mb_partner"
+                    app:layout_constraintRight_toLeftOf="parent"
+                    app:text="@string/backpack" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorExpBar"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>

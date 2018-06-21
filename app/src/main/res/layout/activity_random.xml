@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ActRandom"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorScene">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_partner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/random"
+            android:textColor="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        style="@style/PopupCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_panel"
+            android:padding="8dp">
+
+            <GridView
+                android:id="@+id/gv_stone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"
+                android:scrollbars="none">
+
+            </GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.swimmi.linya.ui.view.combine.RandomButton
+                android:id="@+id/rb_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/rb_fifth"
+                android:gravity="center"
+                app:number="3" />
+
+            <net.swimmi.linya.ui.view.combine.RandomButton
+                android:id="@+id/rb_fifth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/rb_fourth"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:gravity="center"
+                app:number="4" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.swimmi.linya.ui.view.combine.RandomButton
+                android:id="@+id/rb_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/rb_second"
+                android:gravity="center"
+                app:number="0" />
+
+            <net.swimmi.linya.ui.view.combine.RandomButton
+                android:id="@+id/rb_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/rb_first"
+                app:layout_constraintRight_toLeftOf="@id/rb_third"
+                android:gravity="center"
+                app:number="1" />
+
+            <net.swimmi.linya.ui.view.combine.RandomButton
+                android:id="@+id/rb_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/rb_second"
+                app:layout_constraintRight_toLeftOf="parent"
+                android:gravity="center"
+                app:number="2" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical">
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:id="@+id/pb_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            app:isPrimary="false"
+            app:text="@string/random_sell" />
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:isPrimary="false"
+            app:text="@string/random_exchange" />
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:id="@+id/pb_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            app:text="@string/random_auto" />
+
+    </RelativeLayout>
+
+</LinearLayout>

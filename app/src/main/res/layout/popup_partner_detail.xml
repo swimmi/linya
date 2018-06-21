@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/colorScene"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="12dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/bg_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ll_info"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_panel"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintBottom_toTopOf="parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="56dp"
+                        android:layout_height="64dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/bg_panel_light">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorText"
+                            android:text="技能"/>
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:ems="1"
+                            android:lineSpacingMultiplier="0.9"
+                            android:background="@color/colorPanelBorderLight"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:text="@string/basic_skill" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="56dp"
+                        android:layout_height="64dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/bg_panel_light">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorText"
+                            android:text="技能"/>
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:ems="1"
+                            android:lineSpacingMultiplier="0.9"
+                            android:background="@color/colorPanelBorderLight"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:text="@string/power_skill" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="56dp"
+                        android:layout_height="64dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/bg_panel_light">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="8dp"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorText"
+                            android:text="技能"/>
+
+                        <TextView
+                            android:layout_width="16dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:ems="1"
+                            android:lineSpacingMultiplier="0.9"
+                            android:background="@color/colorPanelBorderLight"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="12dp"
+                            android:text="@string/wonder_skill" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/ll_panel"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/partner_detail"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/iv_close_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorScene"
+    tools:context=".ui.activity.ActPrepare">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_panel">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_partner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/prepare"
+            android:textColor="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/iv_set_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_set_array" />
+
+    </RelativeLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_card">
+
+        <include layout="@layout/battle_array" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_stage_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextLight"
+                        android:text="7-3 TITLE" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="12sp"
+                        android:text="敌方阵容:" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:isBoss="true"
+                                app:level="100"
+                                app:ling="2"
+                                app:name="白素贞" />
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ling="1"
+                                app:name="杨戬" />
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ling="3"
+                                app:name="司疫君" />
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:name="小兵" />
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:name="小兵" />
+
+                            <net.swimmi.linya.ui.view.combine.PartnerView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:name="小兵" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="12sp"
+                        android:text="概率掉落:" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <net.swimmi.linya.ui.view.combine.ItemView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:count="300"
+                                app:name="灵石" />
+
+                            <net.swimmi.linya.ui.view.combine.ItemView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:count="100"
+                                app:name="经验" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorTextGrey"
+                        android:textSize="12sp"
+                        android:text="三星条件:" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/ic_star"
+                                android:drawablePadding="8dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorWhite"
+                                android:text="成功闯关" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/ic_star"
+                                android:drawablePadding="8dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorWhite"
+                                android:text="副本剩余时间大于01:30" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:gravity="center_vertical"
+                                android:drawableLeft="@drawable/ic_star"
+                                android:drawablePadding="8dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorWhite"
+                                android:text="没有伙伴阵亡" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_report"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="8dp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            app:isPrimary="false"
+            app:text="扫荡" />
+
+        <net.swimmi.linya.ui.view.combine.PrimaryButton
+            android:id="@+id/pb_enter_battle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            app:isPrimary="true"
+            app:text="挑战" />
+
+    </RelativeLayout>
+
+</LinearLayout>
