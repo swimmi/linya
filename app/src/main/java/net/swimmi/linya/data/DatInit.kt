@@ -3,10 +3,7 @@ package net.swimmi.linya.data
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import net.swimmi.linya.model.Item
-import net.swimmi.linya.model.MyItem
-import net.swimmi.linya.model.MyPartner
-import net.swimmi.linya.model.Partner
+import net.swimmi.linya.model.*
 import net.swimmi.linya.ui.utils.UFile
 import org.litepal.LitePal
 
@@ -20,8 +17,14 @@ class DatGame {
         this.context = context
         addItem()
         addPartner()
+        loadPlayer()
         loadMyPartner()
         loadMyItem()
+    }
+
+    private fun loadPlayer() {
+        val player = Player("草未眠", 1000, 100, 300000)
+        player.save()
     }
 
     private fun addItem() {
