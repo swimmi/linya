@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/swimmi/Workspace/Linya/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
+            "outputFile": "F:\\Work\\Linya\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v12\\values-v12.xml",
             "map": [
                 {
-                    "source": "/home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/res/values-v12/values-v12.xml",
+                    "source": "C:\\Users\\swimmi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-beta1.aar\\b1f51e49d17dcd7a7423e84312f2a409\\res\\values-v12\\values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

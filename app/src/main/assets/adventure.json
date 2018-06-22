@@ -49,5 +49,56 @@
         ]
       }
     ]
+  },
+  {
+    "name": "三打白骨精",
+    "text": "师父你在此地不要走动，待我前去化缘",
+    "pass": [
+      {
+        "name": "aaa",
+        "plots": [
+          {
+            "id": 1,
+            "npc": 23,
+            "text": "##",
+            "type": 1,
+            "pre": 0,
+            "exit": false
+          },
+          {
+            "id": 2,
+            "npc": 23,
+            "text": "###",
+            "type": 2,
+            "pre": 0,
+            "exit": false
+          },
+          {
+            "id": 3,
+            "npc": 23,
+            "text": "####",
+            "type": 1,
+            "pre": 0,
+            "exit": true
+          },
+          {
+            "id": 4,
+            "npc": 23,
+            "text": "#####",
+            "type": 2,
+            "pre": 1,
+            "exit": false
+          },
+          {
+            "id": 5,
+            "npc": 23,
+            "text": "######",
+            "type": 1,
+            "pre": 3,
+            "exit": true
+          }
+        ]
+      }
+    ]
   }
 ]
