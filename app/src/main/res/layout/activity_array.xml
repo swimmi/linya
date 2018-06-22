@@ -89,20 +89,18 @@
         android:layout_height="wrap_content"
         style="@style/PopupCard">
 
-        <net.swimmi.linya.ui.view.combine.PrimaryButton
+        <net.swimmi.linya.ui.view.combine.SimpleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="8dp"
-            app:isPrimary="false"
             app:text="扫荡" />
 
-        <net.swimmi.linya.ui.view.combine.PrimaryButton
+        <net.swimmi.linya.ui.view.combine.SimpleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_marginRight="8dp"
-            app:isPrimary="true"
             app:text="挑战" />
 
     </RelativeLayout>

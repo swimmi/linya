@@ -12,7 +12,7 @@
         <attr name="hasDot" />
     </declare-styleable>
     <declare-styleable name="NumberTag">
-        <attr name="value" format="integer" />
+        <attr name="text" />
         <attr name="icon" />
     </declare-styleable>
     <declare-styleable name="TitleBar">
@@ -32,9 +32,9 @@
         <attr name="name" />
         <attr name="count" />
     </declare-styleable>
-    <declare-styleable name="PrimaryButton">
+    <declare-styleable name="SimpleButton">
         <attr name="text" />
-        <attr name="isPrimary" format="boolean" />
+        <attr name="backgroundResource" format="reference" />
     </declare-styleable>
     <declare-styleable name="BiasTextView">
         <attr name="degrees" format="integer" />

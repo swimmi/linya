@@ -7,7 +7,7 @@ import net.swimmi.linya.model.*
 import net.swimmi.linya.ui.utils.UFile
 import org.litepal.LitePal
 
-class DatGame {
+class DatInit {
 
     private lateinit var context: Context
 

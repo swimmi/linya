@@ -1,13 +1,20 @@
 package net.swimmi.linya.data.helper
 
+import android.content.ContentValues
+import android.util.Log
 import net.swimmi.linya.base.DataHelper
 import net.swimmi.linya.model.MyPartner
 import net.swimmi.linya.model.Partner
+import net.swimmi.linya.model.Player
 import org.litepal.LitePal
 
 class HPlayer: DataHelper() {
 
     private val tag = "HPlayer"
+
+    fun getPlayer(): Player {
+        return LitePal.find(Player::class.java, 1)
+    }
 
     fun getPartners(): List<MyPartner> {
         return LitePal.findAll(MyPartner::class.java)
@@ -21,6 +28,13 @@ class HPlayer: DataHelper() {
         return if(hasPartner(partner))
             LitePal.where("partner = ?", partner.id.toString()).findFirst(MyPartner::class.java)
         else null
+    }
+
+    fun alterValue(where: String, how: String) {
+        val values = ContentValues()
+        values.put(where, "$where $how")
+        Log.d(tag, "$where: $how")
+        LitePal.update(Player::class.java, values, 1)
     }
 
     fun getAllPartner(type: Int): List<MyPartner> {
@@ -38,7 +52,6 @@ class HPlayer: DataHelper() {
                     cursor.getInt(cursor.getColumnIndex("star")))
             list.add(myPartner)
         }
-
         return list
     }
 }

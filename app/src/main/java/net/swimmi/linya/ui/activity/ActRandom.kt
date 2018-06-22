@@ -1,7 +1,6 @@
 package net.swimmi.linya.ui.activity
 
 import android.annotation.SuppressLint
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
@@ -14,6 +13,7 @@ import net.swimmi.linya.adapter.AdpCommon
 import net.swimmi.linya.base.ActBase
 import net.swimmi.linya.base.ViewHolder
 import net.swimmi.linya.data.DatConst
+import net.swimmi.linya.model.Game
 import net.swimmi.linya.model.Stone
 import net.swimmi.linya.ui.utils.URandom
 import net.swimmi.linya.ui.view.combine.RandomButton
@@ -29,6 +29,8 @@ class ActRandom : ActBase(), View.OnClickListener {
     private val random = URandom()
     private var theNumber = 0
     private var speed: Long = 800
+
+    private var mTimer = Timer()
 
     private lateinit var rbList: MutableList<RandomButton>
 
@@ -70,6 +72,16 @@ class ActRandom : ActBase(), View.OnClickListener {
         rbList = mutableListOf(rb_first, rb_second, rb_third, rb_fourth, rb_fifth)
         for( (index, rb) in rbList.withIndex()) {
             rb.setOnClickListener {
+                val cost = DatConst.RANDOM_COSTS[index]
+                // 钱不够
+                if (Game.player.money < cost) {
+                    if (!pb_auto.isEnabled) stopAutoRandom()
+                    toast(R.string.not_enough_money)
+                    return@setOnClickListener
+                }
+                // 消耗money
+                Game.player.money -= cost
+                Game.player.save()
 
                 mList.add(randomStone(theNumber))
                 mAdapter.notifyDataSetChanged()
@@ -105,7 +117,6 @@ class ActRandom : ActBase(), View.OnClickListener {
         val length = DatConst.STONE_TYPES.size
         val index = Random().nextInt(length)
         val quality = random.dice(rateArray)
-        Log.i("TAG>>>", index.toString() + ": " + quality)
         return Stone(DatConst.STONE_TYPES[index], quality)
     }
 
@@ -113,7 +124,6 @@ class ActRandom : ActBase(), View.OnClickListener {
         speed = 300
 
         var count = 80
-        val timer = Timer()
         val timerTask = timerTask {
             kotlin.run {
                 val message = Message()
@@ -121,13 +131,10 @@ class ActRandom : ActBase(), View.OnClickListener {
                 mHandler.sendMessage(message)
             }
             count --
-            if (count == 0) {
-                pb_auto.isEnabled = true
-                speed = 800
-                timer.cancel()
-            }
+            if (count == 0) stopAutoRandom()
         }
-        timer.schedule(timerTask, 300, 300)
+        mTimer = Timer()
+        mTimer.schedule(timerTask, 300, 300)
         pb_auto.isEnabled = false
     }
 
@@ -140,8 +147,18 @@ class ActRandom : ActBase(), View.OnClickListener {
         }
     }
 
+    private fun stopAutoRandom() {
+        pb_auto.isEnabled = true
+        speed = 800
+        rbList[theNumber].sv_selection.startAnimation(speed)
+        mTimer.cancel()
+    }
+
     private fun sellBadStones() {
         val count = mList.count { it.quality == 0 }
+        Game.player.money += count * 500
+        Game.player.save()
+
         toast(String.format(getString(R.string.fmt_sell_bad_stones), count))
         mList.removeAll { it.quality == 0 }
         mList.sortBy { it.quality }

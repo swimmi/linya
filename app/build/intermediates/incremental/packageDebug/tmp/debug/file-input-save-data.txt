@@ -1,12 +1,13 @@
 #Internal package file, do not edit.
-#Wed Jun 20 15:32:45 CST 2018
+#Fri Jun 22 17:55:38 CST 2018
 4.path=note
 8.set=ASSET
 6.path=my_partner.json
 0.baseType=DIRECTORY
+10.path=partner.json
 5.baseType=DIRECTORY
 1.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
-8.path=item.json
+8.path=adventure.json
 3.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 4.set=ASSET
 5.base=/home/swimmi/Workspace/Linya/app/build/intermediates/transforms/dexMerger/debug/0
@@ -18,23 +19,26 @@
 7.set=ASSET
 3.set=ASSET
 2.baseType=DIRECTORY
+10.baseType=DIRECTORY
 1.path=litepal.xml
 7.baseType=DIRECTORY
 3.path=my_item.json
+10.set=ASSET
 5.path=classes.dex
 0.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 7.path=skill.json
-9.path=partner.json
+9.path=item.json
 6.set=ASSET
 2.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 4.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 3.baseType=DIRECTORY
 6.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
+10.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 8.base=/home/swimmi/Workspace/Linya/app/build/intermediates/assets/debug
 2.set=ASSET
 8.baseType=DIRECTORY
 9.set=ASSET
-count=10
+count=11
 4.baseType=DIRECTORY
 5.set=DEX
 9.baseType=DIRECTORY

@@ -17,10 +17,20 @@ class NumberTag(context: Context, attrs: AttributeSet) : RelativeLayout(context,
         for ( i in 0..ta.indexCount) {
             val itemId: Int = ta.getIndex(i)
             when(itemId) {
-                R.styleable.NumberTag_value -> tv_value.text = ta.getInteger(itemId, 0).toString()
+                R.styleable.NumberTag_text -> tv_value.text = ta.getText(itemId)
                 R.styleable.NumberTag_icon -> iv_icon.setImageResource(ta.getResourceId(itemId, -1))
             }
         }
         ta.recycle()
     }
+
+    var text: String
+        get() = tv_value.text as String
+        set(value) {
+            val base = 10000
+            if (value.toLong() < base)
+                tv_value.text = value
+            else
+                tv_value.text = String.format(resources.getString(R.string.fmt_money), value.toLong() / base)
+        }
 }

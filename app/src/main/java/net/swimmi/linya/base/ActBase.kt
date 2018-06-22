@@ -14,6 +14,7 @@ import android.widget.RelativeLayout
 import net.swimmi.linya.R
 import net.swimmi.linya.ui.utils.UDisplay
 import net.swimmi.linya.ui.view.custom.RippleView
+import java.util.*
 
 abstract class ActBase : AppCompatActivity(), View.OnTouchListener {
 
@@ -39,5 +40,4 @@ abstract class ActBase : AppCompatActivity(), View.OnTouchListener {
         }
         return false
     }
-
 }

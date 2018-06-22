@@ -3,14 +3,16 @@ package net.swimmi.linya.ui.activity
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main.*
 import net.swimmi.linya.R
 import net.swimmi.linya.base.ActBase
-import net.swimmi.linya.data.DatGame
+import net.swimmi.linya.data.DatInit
+import net.swimmi.linya.data.helper.HAdventure
+import net.swimmi.linya.data.helper.HPlayer
+import net.swimmi.linya.model.Game
 
 class ActMain : ActBase(), View.OnClickListener {
 
@@ -20,10 +22,9 @@ class ActMain : ActBase(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        sp = getSharedPreferences("data", Context.MODE_PRIVATE)
-
         initView()
         initData()
+        loadData()
     }
 
     private fun initView() {
@@ -34,10 +35,21 @@ class ActMain : ActBase(), View.OnClickListener {
     }
 
     private fun initData() {
+        sp = getSharedPreferences("data", Context.MODE_PRIVATE)
         if(!sp.getBoolean("isLoaded", false)) {
-            DatGame().addData(this)
+            DatInit().addData(this)
             sp.edit().putBoolean("isLoaded", true).apply()
         }
+    }
+
+    private fun loadData() {
+        Game.player = HPlayer().getPlayer()
+        Game.advList = HAdventure().loadAdventure(this)
+        // 设置各项数据
+        tv_name.text = Game.player.name
+        tv_force.text = Game.player.force.toString()
+        nt_money.text = Game.player.money.toString()
+        nt_power.text = Game.player.power.toString()
     }
 
     override fun onClick(view: View) {
@@ -82,5 +94,10 @@ class ActMain : ActBase(), View.OnClickListener {
             view.visibility = View.GONE
             view.startAnimation(animation)
         }
+    }
+
+    override fun onResume() {
+        loadData()
+        super.onResume()
     }
 }

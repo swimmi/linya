@@ -134,34 +134,36 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="72dp"
         android:layout_marginTop="8dp"
         android:padding="16dp"
-        android:background="@drawable/bg_card"
-        android:orientation="vertical">
+        android:background="@drawable/bg_card">
 
-        <net.swimmi.linya.ui.view.combine.PrimaryButton
+        <net.swimmi.linya.ui.view.combine.SimpleButton
             android:id="@+id/pb_sell"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_marginStart="8dp"
-            app:isPrimary="false"
+            android:layout_centerVertical="true"
+            app:backgroundResource="@mipmap/btn_white"
             app:text="@string/random_sell" />
 
-        <net.swimmi.linya.ui.view.combine.PrimaryButton
+        <net.swimmi.linya.ui.view.combine.SimpleButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            app:isPrimary="false"
+            app:backgroundResource="@mipmap/btn_white"
             app:text="@string/random_exchange" />
 
-        <net.swimmi.linya.ui.view.combine.PrimaryButton
+        <net.swimmi.linya.ui.view.combine.SimpleButton
             android:id="@+id/pb_auto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            app:backgroundResource="@mipmap/btn_gold"
             app:text="@string/random_auto" />
 
     </RelativeLayout>
