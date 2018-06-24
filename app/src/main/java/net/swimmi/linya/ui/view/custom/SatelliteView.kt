@@ -105,8 +105,4 @@ class SatelliteView @JvmOverloads constructor(context: Context, attrs: Attribute
     fun stopAnimation() {
         animator.cancel()
     }
-
-    inline fun ViewManager.satelliteView(init: SatelliteView.() -> Unit): SatelliteView {
-        return ankoView({ SatelliteView(it) }, theme = 0, init = init)
-    }
 }

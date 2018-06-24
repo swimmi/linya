@@ -68,4 +68,10 @@
         <attr name="rippleColor" format="reference" />
         <attr name="autoStart" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="CharacterView">
+        <attr name="position" format="integer" />
+        <attr name="name" />
+        <attr name="maxHp" format="integer" />
+        <attr name="hp" format="integer" />
+    </declare-styleable>
 </resources>

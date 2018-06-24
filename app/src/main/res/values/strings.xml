@@ -79,7 +79,8 @@
     <string name="not_enough_money">您没有足够的钱</string>
 
     <string name="fmt_money">%1$dW</string>
-    <string name="fmt_sell_bad_stones">卖出%1$d颗顽石</string>
-    <string name="fmt_partner_aptt">资质：%1$d</string>
+    <string name="fmt_sell_bad_stones">卖出$d颗顽石</string>
+    <string name="fmt_partner_aptt">资质：$d</string>
     <string name="fmt_partner_count">%1$d / %2$d</string>
+    <string name="fmt_battle_timer">%02d:%02d</string>
 </resources>

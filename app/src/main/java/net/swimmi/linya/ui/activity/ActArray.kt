@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_array.*
 import net.swimmi.linya.R
 import net.swimmi.linya.adapter.AdpCommon
+import net.swimmi.linya.base.ActBase
 import net.swimmi.linya.base.ViewHolder
 import net.swimmi.linya.data.DatConst
 import net.swimmi.linya.data.helper.HPartner
@@ -15,7 +16,7 @@ import net.swimmi.linya.model.MyPartner
 import net.swimmi.linya.ui.view.combine.CatalogTab
 import net.swimmi.linya.ui.view.combine.PartnerView
 
-class ActArray : AppCompatActivity(), View.OnClickListener {
+class ActArray : ActBase(), View.OnClickListener {
 
     private var playerH: HPlayer = HPlayer()
     private lateinit var mList: MutableList<MyPartner>
