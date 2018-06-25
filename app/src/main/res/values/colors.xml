@@ -32,7 +32,8 @@
     <color name="colorRipple">#a5b3fb</color>
 
     <color name="colorCharacter">#fae291</color>
-    <color name="colorHp">#67ce73</color>
+    <color name="colorHpGreen">#67ce73</color>
+    <color name="colorHpRed">#ff8888</color>
     <color name="colorMp">#35b1da</color>
     <color name="colorDamage">#ff5750</color>
 

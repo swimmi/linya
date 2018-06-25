@@ -1,7 +1,8 @@
 package net.swimmi.linya.model
 
-import android.util.Log
+import kotlinx.android.synthetic.main.activity_battle.*
 import net.swimmi.linya.ui.utils.UAnimate
+import net.swimmi.linya.ui.view.custom.BattleField
 import net.swimmi.linya.ui.view.custom.CharacterView
 
 
@@ -11,6 +12,8 @@ data class Character(
         var aptt: Int
 ) {
     var attr: MutableMap<String, Int>
+
+    var isNpc = false
 
     init {
         attr = genAttr()
@@ -22,6 +25,7 @@ data class Character(
         val attr = mutableMapOf<String, Int>()
         attr["maxHp"] = (level * 300 * ap).toInt()
         attr["hp"] = attr["maxHp"]!!
+        attr["mp"] = 0
         attr["atk"] = (level * 30 * ap).toInt()
         attr["def"] = (level * 20 * ap).toInt()
         attr["crt"] = (level * 10 * ap).toInt()
@@ -40,11 +44,11 @@ data class Character(
         }
     }
 
-    fun shoot(target: Character) {
-
+    fun shoot(field: BattleField, target: Character) {
+        field.shoot(this.mView, target.mView) { target.damage(1000) }
     }
 
-    fun damage(value: Int) {
+    private fun damage(value: Int) {
         val hp = attr["hp"]?:0
         if (hp > value) {
             attr["hp"] = hp - value

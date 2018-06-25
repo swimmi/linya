@@ -45,7 +45,7 @@
     </RelativeLayout>
 
     <net.swimmi.linya.ui.view.custom.BattleField
-        android:id="@+id/rl_battle"
+        android:id="@+id/battle_field"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
