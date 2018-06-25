@@ -94,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="8dp"
+            app:backgroundResource="@mipmap/btn_white"
             app:text="扫荡" />
 
         <net.swimmi.linya.ui.view.combine.SimpleButton

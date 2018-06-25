@@ -13,7 +13,7 @@ class UAnimate {
 
     companion object {
 
-        fun mirrorRotate(context: Context, view: View, doSomething: () -> Unit) {
+        fun mirrorRotate(context: Context, view: View, after: () -> Unit) {
             var anim = AnimationUtils.loadAnimation(context, R.anim.mirror_rotate_out)
             anim.setAnimationListener(object: Animation.AnimationListener{
                 override fun onAnimationRepeat(p0: Animation?) {
@@ -21,7 +21,7 @@ class UAnimate {
                 }
 
                 override fun onAnimationEnd(p0: Animation?) {
-                    doSomething()
+                    after()
                     anim = AnimationUtils.loadAnimation(context, R.anim.mirror_rotate_in)
                     view.startAnimation(anim)
                 }
@@ -33,7 +33,7 @@ class UAnimate {
             view.startAnimation(anim)
         }
 
-        fun round(from: View, to: View) {
+        fun round(from: View, to: View, after: () -> Unit) {
             val animatorSet = AnimatorSet()
             animatorSet.duration = 1000
             animatorSet.interpolator = AccelerateInterpolator()
@@ -56,6 +56,7 @@ class UAnimate {
                 override fun onAnimationEnd(p0: Animator?) {
                     if(flag) {
                         shock(to)
+                        after()
                         animatorSet.reverse()
                         flag = false
                     }

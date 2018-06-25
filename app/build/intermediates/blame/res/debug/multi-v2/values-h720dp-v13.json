@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Work\\Linya\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "/home/swimmi/Workspace/Linya/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\swimmi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-beta1.aar\\b1f51e49d17dcd7a7423e84312f2a409\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

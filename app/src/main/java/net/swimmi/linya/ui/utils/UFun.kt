@@ -17,3 +17,9 @@ fun View.hide() {
 fun View.show() {
     if (this.visibility != View.VISIBLE) this.visibility = View.VISIBLE
 }
+
+fun View.mWidth(): Int {
+    val width = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+    this.measure(width, 0)
+    return this.measuredWidth
+}

@@ -13,8 +13,12 @@ import net.swimmi.linya.base.ActBase
 import net.swimmi.linya.model.Battle
 import net.swimmi.linya.model.Character
 import net.swimmi.linya.model.Team
-import net.swimmi.linya.ui.view.combine.CharacterView
-import org.jetbrains.anko.backgroundResource
+import net.swimmi.linya.ui.utils.UDisplay
+import net.swimmi.linya.ui.utils.UFun
+import net.swimmi.linya.ui.utils.mWidth
+import net.swimmi.linya.ui.view.custom.CharacterView
+import org.jetbrains.anko.ScreenSize
+import org.jetbrains.anko.dip
 import java.util.*
 import kotlin.concurrent.timerTask
 
@@ -46,7 +50,7 @@ class ActBattle : ActBase(), View.OnClickListener {
     }
 
     private fun loadBattle() {
-        val arrayType = 1
+        val arrayType = 0
         val char1 = Character(0, 70, 14)
         val char2 = Character(0, 70, 13)
         val char3 = Character(0, 70, 12)
@@ -67,31 +71,36 @@ class ActBattle : ActBase(), View.OnClickListener {
         loadBattle()
         mTime = mBattle.duration
         val array = Team.getArray(mTeamA.arrayType)
-
+        val parentWidth = UDisplay(this).getScreenWidth() - dip(16)
+        val distanceWidth = dip(80)
+        val distanceHeight = dip(88)
         for ((index, a) in array.withIndex()) {
             if (a != 0) {
-                val cv = CharacterView(this)
-                val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-                params.setMargins(200 + 200 * (index%3),1000 + 200 * (index/3),0,0)
-                cv.layoutParams = params
                 val member = mTeamA.members[a - 1]
-                member.view = cv
+                val cv = CharacterView(this, member)
+                val params = RelativeLayout.LayoutParams(cv.size, cv.size)
+                params.addRule(RelativeLayout.BELOW, R.id.v_divider)
+
+                params.setMargins((parentWidth / 2 - cv.size / 2) + distanceWidth * (index%3 - 1),dip(32) + distanceHeight * (index/3),0,0)
+                cv.layoutParams = params
                 cv.setOnClickListener {
-                    member.goto(mTeamB.members[0])
+                    val target = mTeamB.members[0]
+                    rl_battle.shoot(member.mView, target.mView){ target.damage(1000) }
+
                 }
+                member.mView = cv
                 rl_battle.addView(cv)
             }
         }
 
         for (member in mTeamB.members) {
-            val cv = CharacterView(this)
-            val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params.setMargins(600,200,0,0)
+            val cv = CharacterView(this, member)
+            val params = RelativeLayout.LayoutParams(cv.size, cv.size)
+            params.addRule(RelativeLayout.CENTER_HORIZONTAL)
             cv.layoutParams = params
-            member.view = cv
+            member.mView = cv
             rl_battle.addView(cv)
         }
-
     }
 
     /**

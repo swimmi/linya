@@ -30,12 +30,14 @@
     <color name="colorExpBarLight">#8cedff</color>
     <color name="colorExpBarBackground">#1f1e34</color>
     <color name="colorRipple">#a5b3fb</color>
-    <color name="colorCharacter">#7b90d4</color>
 
+    <color name="colorCharacter">#fae291</color>
     <color name="colorHp">#67ce73</color>
+    <color name="colorMp">#35b1da</color>
+    <color name="colorDamage">#ff5750</color>
 
     <!-- Adventure Colours -->
-    <color name="colorAdvBlock">#5c77a6</color>
+    <color name="colorAdvBlock">#556489</color>
     <color name="colorAdvBlockCanIn">#81acf7</color>
     <color name="colorAdvPlot">#115eba</color>
     <color name="colorAdvBattle">#ca4b45</color>

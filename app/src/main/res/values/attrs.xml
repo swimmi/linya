@@ -74,4 +74,7 @@
         <attr name="maxHp" format="integer" />
         <attr name="hp" format="integer" />
     </declare-styleable>
+    <declare-styleable name="BattleField">
+
+    </declare-styleable>
 </resources>
