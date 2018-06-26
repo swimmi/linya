@@ -5,4 +5,5 @@ data class Battle(
         val teamB: Team,
         val duration: Int
 ) {
+    var isOver = false
 }

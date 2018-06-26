@@ -26,7 +26,6 @@ class ActRandom : ActBase(), View.OnClickListener {
     private lateinit var mList: MutableList<Stone>
     private lateinit var mAdapter: AdpCommon<Stone>
 
-    private val random = URandom()
     private var theNumber = 0
     private var speed: Long = 800
 
@@ -107,7 +106,7 @@ class ActRandom : ActBase(), View.OnClickListener {
     private fun nextNumber(number: Int): Int {
         var next = number
         val rate = DatConst.RANDOM_RATES[number]
-        if(random.dice(rate)) next ++ else next = 0
+        if(URandom.dice(rate)) next ++ else next = 0
         if (next == 5) next = 0
         return next
     }
@@ -116,7 +115,7 @@ class ActRandom : ActBase(), View.OnClickListener {
         val rateArray = DatConst.STONE_RATES[number]
         val length = DatConst.STONE_TYPES.size
         val index = Random().nextInt(length)
-        val quality = random.dice(rateArray)
+        val quality = URandom.dice(rateArray)
         return Stone(DatConst.STONE_TYPES[index], quality)
     }
 

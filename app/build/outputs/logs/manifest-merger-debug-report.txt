@@ -1,177 +1,177 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf131bf737d44bde8ba047f90511460d\AndroidManifest.xml:2:1-11:12
-MERGED from [org.litepal.android:core:2.0.0] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\core-2.0.0.aar\2ccce6b14d18be931cc5d46cbd831c71\AndroidManifest.xml:2:1-15:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\e428e48cd232c6fcaf8b60f2c7363789\AndroidManifest.xml:15:1-21:12
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:17:1-31:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/12b9420c634c1387f75f0a4b5190a4e6/AndroidManifest.xml:2:1-11:12
+MERGED from [org.litepal.android:core:2.0.0] /home/swimmi/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/03f3407315fbcbd1c7b27f30afa05ad2/AndroidManifest.xml:2:1-15:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4817f74ffea37b4d8fd0256418b90317/AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:17:1-31:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:1-29:12
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:5:5-27:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf131bf737d44bde8ba047f90511460d\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf131bf737d44bde8ba047f90511460d\AndroidManifest.xml:9:5-20
-MERGED from [org.litepal.android:core:2.0.0] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\core-2.0.0.aar\2ccce6b14d18be931cc5d46cbd831c71\AndroidManifest.xml:12:5-13:19
-MERGED from [org.litepal.android:core:2.0.0] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\core-2.0.0.aar\2ccce6b14d18be931cc5d46cbd831c71\AndroidManifest.xml:12:5-13:19
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:25:5-29:19
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:5:5-27:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/12b9420c634c1387f75f0a4b5190a4e6/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/12b9420c634c1387f75f0a4b5190a4e6/AndroidManifest.xml:9:5-20
+MERGED from [org.litepal.android:core:2.0.0] /home/swimmi/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/03f3407315fbcbd1c7b27f30afa05ad2/AndroidManifest.xml:12:5-13:19
+MERGED from [org.litepal.android:core:2.0.0] /home/swimmi/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/03f3407315fbcbd1c7b27f30afa05ad2/AndroidManifest.xml:12:5-13:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:9:9-41
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:12:9-40
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:6:9-43
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:6:9-43
 activity#net.swimmi.linya.ui.activity.ActMain
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:13:9-19:20
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:13:9-19:20
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:13:19-54
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:13:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:14:13-18:29
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:15:17-69
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:15:25-66
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:17:17-77
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:17:27-74
 activity#net.swimmi.linya.ui.activity.ActBattle
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:20:9-59
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:20:9-59
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:20:19-56
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:20:19-56
 activity#net.swimmi.linya.ui.activity.ActPrepare
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:21:9-60
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:21:9-60
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:21:19-57
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:21:19-57
 activity#net.swimmi.linya.ui.activity.ActPartner
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:22:9-60
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:22:9-60
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:22:19-57
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:22:19-57
 activity#net.swimmi.linya.ui.activity.ActPack
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:23:9-57
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:23:9-57
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:23:19-54
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:23:19-54
 activity#net.swimmi.linya.ui.activity.ActArray
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:24:9-58
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:24:9-58
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:24:19-55
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:24:19-55
 activity#net.swimmi.linya.ui.activity.ActRandom
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:25:9-59
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:25:9-59
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:25:19-56
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:25:19-56
 activity#net.swimmi.linya.ui.activity.ActAdventure
-ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:26:9-71
+ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:26:9-71
 	android:name
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml:26:19-59
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml:26:19-59
 uses-sdk
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf131bf737d44bde8ba047f90511460d\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\bf131bf737d44bde8ba047f90511460d\AndroidManifest.xml:5:5-7:41
-MERGED from [org.litepal.android:core:2.0.0] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\core-2.0.0.aar\2ccce6b14d18be931cc5d46cbd831c71\AndroidManifest.xml:8:5-10:41
-MERGED from [org.litepal.android:core:2.0.0] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\core-2.0.0.aar\2ccce6b14d18be931cc5d46cbd831c71\AndroidManifest.xml:8:5-10:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\e428e48cd232c6fcaf8b60f2c7363789\AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\rxandroid-2.0.2.aar\e428e48cd232c6fcaf8b60f2c7363789\AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:21:5-23:58
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/12b9420c634c1387f75f0a4b5190a4e6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/12b9420c634c1387f75f0a4b5190a4e6/AndroidManifest.xml:5:5-7:41
+MERGED from [org.litepal.android:core:2.0.0] /home/swimmi/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/03f3407315fbcbd1c7b27f30afa05ad2/AndroidManifest.xml:8:5-10:41
+MERGED from [org.litepal.android:core:2.0.0] /home/swimmi/.gradle/caches/transforms-1/files-1.1/core-2.0.0.aar/03f3407315fbcbd1c7b27f30afa05ad2/AndroidManifest.xml:8:5-10:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4817f74ffea37b4d8fd0256418b90317/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/swimmi/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/4817f74ffea37b4d8fd0256418b90317/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:21:5-23:58
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		ADDED from F:\Work\Linya\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Work\Linya\app\src\main\AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		ADDED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
+		INJECTED from /home/swimmi/Workspace/Linya/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\42a6ef55e392164924bc326a6700b2ba\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\895b1d2b6f2e780cdff3e0d2ba9e6e9a\AndroidManifest.xml:23:9-25:44
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\e70d00b1ce88925d5ac000f45b5fd3b2\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\136f0b326016a3076f9a3e8bd1e999df\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\24af942b4560866881191c1e649d5030\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\9abac708e2b084f141efc0f9cc92dc4a\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\7b5f8103519dd005e9fe2d912f1aca55\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:26:9-28:44
-MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\f32e561e62ee29f70d51b24ff370e12e\AndroidManifest.xml:26:9-28:44
+ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-beta1.aar/326bd6340cf17bc532519a45f1a75613/AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-beta1.aar/5f22a7e4688f82ed9dd1a94e26dbe1b4/AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-beta1.aar/3710d94cb524d7694e56cd0bb3a5d34f/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-beta1.aar/fb15b003be3221175be955bc18314de2/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-beta1.aar/e622d0700b52de9018b489dbb2fe1dd3/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-beta1.aar/7e714b576b616e88698c8bb575da68cd/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-beta1.aar/76ead99bc163f69391597e650247f1b3/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-compat:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-beta1.aar/cd2fe09a79cf6a056e54e1bce9a9dfcf/AndroidManifest.xml:26:9-28:44
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:28:13-41
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:28:13-41
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\swimmi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\b1f51e49d17dcd7a7423e84312f2a409\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] /home/swimmi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-beta1.aar/ec55543538760cde6e08803da788d05d/AndroidManifest.xml:27:13-51

@@ -47,7 +47,7 @@ class BattleField @JvmOverloads constructor(context: Context, attrs: AttributeSe
     fun shoot(from: CharacterView, to: CharacterView, after: () -> Unit) {
         isDrawPoint = true
         animator = ValueAnimator.ofFloat(0f, 1f)
-        animator.duration = 800
+        animator.duration = 600
         animator.interpolator = DecelerateInterpolator()
         animator.repeatCount = 0
         val deltaX = to.x - from.x
@@ -55,8 +55,10 @@ class BattleField @JvmOverloads constructor(context: Context, attrs: AttributeSe
         animator.addUpdateListener { animation ->
             pointX = (from.x + from.size / 2) + (animation.animatedValue as Float) * deltaX
             pointY = (from.y + from.size / 2) + (animation.animatedValue as Float) * deltaY
-            if (pointX == to.x + from.size / 2)
+            if (animation.animatedValue as Float == 1f) {
+                isDrawPoint = false
                 after()
+            }
             invalidate()
         }
         //开启动画

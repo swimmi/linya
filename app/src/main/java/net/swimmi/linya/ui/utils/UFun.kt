@@ -11,11 +11,14 @@ fun <T> List<T>.random(): T {
 }
 fun <T> List<T>.joinWith(withList: List<T>): List<T> {
     val list = mutableListOf<T>()
-    if (this.size == withList.size) {
-        for (i in 0 until this.size) {
-            list.add(2 * i, this[i])
-            list.add(2 * i + 1, withList[i])
-        }
+    val size = arrayOf(this.size, withList.size).min()
+    for (i in 0 until size!!) {
+        list.add(2 * i, this[i])
+        list.add(2 * i + 1, withList[i])
+    }
+    arrayOf(this, withList).forEach {
+        if (it.size > size)
+            list.addAll(size, it)
     }
     return list
 }

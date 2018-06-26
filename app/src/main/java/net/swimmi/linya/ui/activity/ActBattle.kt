@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.os.Message
-import android.util.Log
 import android.view.View
 import android.widget.RelativeLayout
 import kotlinx.android.synthetic.main.activity_battle.*
@@ -29,7 +28,7 @@ class ActBattle : ActBase(), View.OnClickListener {
     private var mTime = 0
     private var mTimer = Timer()
     private var mIndex = 0
-    private lateinit var mStack: List<Character>
+    private lateinit var mQueue: List<Character>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -71,9 +70,8 @@ class ActBattle : ActBase(), View.OnClickListener {
      */
     private fun prepare() {
         loadBattle()
-        mTime = mBattle.duration
-
         arrayTeam()
+        mTime = mBattle.duration
 
     }
 
@@ -115,29 +113,60 @@ class ActBattle : ActBase(), View.OnClickListener {
                 battle_field.addView(cv)
             }
         }
-
     }
 
     /**
      * 进入战斗
      */
     private fun start() {
+        // 战斗队列
+        mQueue = mBattle.teamA.members.joinWith(mBattle.teamB.members)
         timerTick()
-        mStack = mBattle.teamA.members.joinWith(mBattle.teamB.members)
     }
 
     private fun roundAttack() {
-        val member = mStack[mIndex]
-        var target = mBattle.teamB.members[2]
-        if (member.isNpc)
-            target = mBattle.teamA.members[0]
-        when (member.type) {
-            0 -> member.goto(target)
-            1 -> member.shoot(battle_field, target)
+        if (!mBattle.isOver) {
+            val self = getSelf()
+            val target = getTarget(self)
+
+            if (target == null) {
+                mBattle.isOver = true
+                return
+            }
+
+            when (self.type) {
+                0 -> self.hit(target!!)
+                1 -> self.shoot(battle_field, target!!)
+            }
+            mIndex++
+            if (mIndex == mQueue.size)
+                mIndex = 0
         }
-        mIndex ++
-        if (mIndex == mStack.size)
-            mIndex = 0
+    }
+
+    private fun getSelf(): Character {
+        var self = mQueue[mIndex]
+        while (!self.isAlive) {
+            mIndex ++
+            self = mQueue[mIndex]
+        }
+        return self
+    }
+
+    private fun getTarget(character: Character): Character? {
+        val team = getTargetTeam(character)
+        for (cm in team.members) {
+            if (cm.isAlive)
+                return cm
+        }
+        return null
+    }
+
+    private fun getTargetTeam(character: Character): Team {
+        var team = mBattle.teamB
+        if (character.isNpc)
+            team = mBattle.teamA
+        return team
     }
 
     /**
@@ -169,7 +198,8 @@ class ActBattle : ActBase(), View.OnClickListener {
             tv_timer.text = String.format(getString(R.string.fmt_battle_timer, mTime / 60, mTime % 60))
             mTime --
         }
-        if (mTime % 3 == 0)
+        // 自动普攻
+        if (mTime % 2 == 0)
             roundAttack()
     }
 

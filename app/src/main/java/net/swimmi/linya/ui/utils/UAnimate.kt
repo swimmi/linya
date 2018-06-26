@@ -13,6 +13,9 @@ class UAnimate {
 
     companion object {
 
+        val UP = 0
+        val DOWN = 1
+
         fun mirrorRotate(context: Context, view: View, after: () -> Unit) {
             var anim = AnimationUtils.loadAnimation(context, R.anim.mirror_rotate_out)
             anim.setAnimationListener(object: Animation.AnimationListener{
@@ -35,7 +38,7 @@ class UAnimate {
 
         fun round(from: View, to: View, after: () -> Unit) {
             val animatorSet = AnimatorSet()
-            animatorSet.duration = 1000
+            animatorSet.duration = 600
             animatorSet.interpolator = AccelerateInterpolator()
             val oa1 = ObjectAnimator.ofFloat(from, "translationX", 0f, to.x - from.x)
             val oa2 = ObjectAnimator.ofFloat(from, "translationY", 0f, to.y - from.y)
@@ -55,7 +58,6 @@ class UAnimate {
 
                 override fun onAnimationEnd(p0: Animator?) {
                     if(flag) {
-                        shock(to)
                         after()
                         animatorSet.reverse()
                         flag = false
@@ -64,13 +66,16 @@ class UAnimate {
             })
         }
 
-        fun shock(target: View) {
+        fun shock(target: View, direction: Int) {
             val animatorSet = AnimatorSet()
             animatorSet.duration = 300
             animatorSet.interpolator = OvershootInterpolator()
             val oa1 = ObjectAnimator.ofFloat(target, "translationY", 0f, 10f)
             val oa2 = ObjectAnimator.ofFloat(target, "translationY", 0f, -10f)
-            animatorSet.play(oa1).after(oa2)
+            when (direction) {
+                UP -> animatorSet.play(oa1).after(oa2)
+                DOWN -> animatorSet.play(oa2).after(oa1)
+            }
             animatorSet.start()
         }
     }
